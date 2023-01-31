@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harry Potter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header__textbox">
+        <h1 class="header__title">Harry Potter</h1>
+        <p class="header__text">
+          View all characters from the Harry Potter universe
+        </p>
+        <div class="header__selects">
+          <div class="header__select">
+            <label class="label" for="hermione">Name</label>
+            <select
+              class="select__name"
+              placeholder="Hermione"
+              name="Name"
+              id="hermione"
+            >
+              <option value="">Harry Potter</option>
+              <option value="">Ron Weasley</option>
+              <option value="">Hermione Granger</option>
+              <option value="">Draco Malfoy</option>
+            </select>
+          </div>
+          <div class="header__select">
+            <label class="label" for="school">School</label>
+            <select
+              class="select__school"
+              placeholder="Choose one"
+              name="School"
+              id="school"
+            >
+              <option value="">Griffindor</option>
+              <option value="">Slytherin</option>
+              <option value="">Ravenclaw</option>
+              <option value="">Hufflepuff</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div class="container">
+          <div class="hp__cards">
+            <div class="hp__card">
+              <img class="hp__pic" src="./img/GG-foto.png" alt="Hermione" />
+              <div class="hp__text">
+                <h2>Hermione Granger</h2>
+                <p>Actor: Emma Watson</p>
+                <p>Gender: female</p>
+                <p>House: Gryffindor</p>
+                <p>Wand core: dragon heartstring</p>
+                <p>Alive: yes</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="./script/script.js"></script>
+  </body>
+</html>
