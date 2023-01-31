@@ -52,10 +52,9 @@ header {
   border-radius: 4px;
   border: rgba(206, 212, 218, 1);
   color: rgba(206, 212, 218, 1);
-  /* appearance: none; */
-}
-.select__name:active {
-  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 21px;
 }
 
 .select__school {
@@ -65,7 +64,18 @@ header {
   border-radius: 4px;
   border: rgba(206, 212, 218, 1);
   color: rgba(206, 212, 218, 1);
-  /* appearance: none; */
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.option {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.placeholder {
+  color: blueviolet;
 }
 
 section {
@@ -84,6 +94,7 @@ section {
   height: 409px;
   width: 334px;
   background-color: rgba(255, 255, 255, 1);
+  margin: auto;
 }
 
 p {
@@ -98,4 +109,37 @@ p {
 .hp__pic {
   height: 192px;
   width: 334px;
+}
+
+@media (max-width: 800px) {
+  .container {
+    max-width: 90%;
+  }
+  .header__selects {
+    flex-direction: column;
+  }
+  .header__textbox {
+    max-width: 90%;
+  }
+  .hp__cards {
+    flex-direction: column;
+  }
+  .select__school {
+    width: 452px;
+  }
+}
+
+@media (max-width: 600px) {
+  .select__name,
+  .select__school {
+    width: 100%;
+  }
+  .header__title {
+    font-size: 52px;
+    line-height: 62px;
+  }
+  .header__text {
+    font-size: 16px;
+    line-height: 28px;
+  }
 }
