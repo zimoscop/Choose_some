@@ -24,3 +24,29 @@ function createCardHp(obj) {
 data.forEach((el) =>
   document.querySelector(".hp__cards").append(createCardHp(el))
 );
+
+const select = document.querySelector(".select__name");
+
+function selectSearch(event) {
+  document.querySelector(".hp__cards").innerHTML = "";
+  data
+    .filter((obj) => obj.name.includes(event.target.value))
+    .forEach((obj) =>
+      document.querySelector(".hp__cards").append(createCardHp(obj))
+    );
+}
+
+select.addEventListener("change", selectSearch);
+
+const selectSch = document.querySelector(".select__school");
+
+function selectSchool(event) {
+  document.querySelector(".hp__cards").innerHTML = "";
+  data
+    .filter((obj) => obj.house.includes(event.target.value))
+    .forEach((obj) =>
+      document.querySelector(".hp__cards").append(createCardHp(obj))
+    );
+}
+
+selectSch.addEventListener("change", selectSchool);
