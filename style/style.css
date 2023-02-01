@@ -109,6 +109,18 @@ p {
 .hp__pic {
   height: 192px;
   width: 334px;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  position: relative;
+  bottom: 50%;
+  /* object-fit: cover */
+
+  /* vertical-align: bottom; */
+  /* display: block; */
 }
 
 @media (max-width: 800px) {
