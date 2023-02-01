@@ -55,6 +55,7 @@ header {
   cursor: pointer;
   font-size: 16px;
   line-height: 21px;
+  padding-left: 17px;
 }
 
 .select__school {
@@ -67,15 +68,12 @@ header {
   cursor: pointer;
   font-size: 16px;
   line-height: 21px;
+  padding-left: 17px;
 }
 
 .option {
   font-size: 16px;
   line-height: 21px;
-}
-
-.placeholder {
-  color: blueviolet;
 }
 
 section {
@@ -118,10 +116,6 @@ img {
   height: auto;
   position: relative;
   bottom: 50%;
-  /* object-fit: cover */
-
-  /* vertical-align: bottom; */
-  /* display: block; */
 }
 
 @media (max-width: 800px) {

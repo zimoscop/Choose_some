@@ -25,18 +25,6 @@ data.forEach((el) =>
   document.querySelector(".hp__cards").append(createCardHp(el))
 );
 
-function createOptionsName(obj) {
-  const option = document.createElement("option");
-  option.className = "option";
-  option.innerHTML = `class="option" value="${obj.name}"`;
-  option.textContent = obj.name;
-  return option;
-}
-
-data.forEach((el) =>
-  document.querySelector(".select__name").append(createOptionsName(el))
-);
-
 const select = document.querySelector(".select__name");
 
 function selectSearch(event) {
@@ -62,3 +50,17 @@ function selectSchool(event) {
 }
 
 selectSch.addEventListener("change", selectSchool);
+
+function commonChoose(e) {
+  document.querySelector(".hp__cards").innerHTML = "";
+  const name = select.value;
+  const school = selectSch.value;
+  data
+    .filter((obj) => obj.name.toLowerCase().trim().includes(name))
+    .filter((obj) => obj.house.includes(school))
+    .forEach((obj) =>
+      document.querySelector(".hp__cards").append(createCardHp(obj))
+    );
+}
+
+select.addEventListener("change", commonChoose);
