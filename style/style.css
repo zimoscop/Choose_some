@@ -89,6 +89,7 @@ section {
 .hp__cards {
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
 }
 .hp__card {
   height: 409px;

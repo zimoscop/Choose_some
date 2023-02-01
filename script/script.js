@@ -25,6 +25,18 @@ data.forEach((el) =>
   document.querySelector(".hp__cards").append(createCardHp(el))
 );
 
+function createOptionsName(obj) {
+  const option = document.createElement("option");
+  option.className = "option";
+  option.innerHTML = `class="option" value="${obj.name}"`;
+  option.textContent = obj.name;
+  return option;
+}
+
+data.forEach((el) =>
+  document.querySelector(".select__name").append(createOptionsName(el))
+);
+
 const select = document.querySelector(".select__name");
 
 function selectSearch(event) {
