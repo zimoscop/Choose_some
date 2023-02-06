@@ -118,6 +118,32 @@ img {
   bottom: 50%;
 }
 
+.like,
+.notlike {
+  width: 48px;
+  height: 48px;
+  position: relative;
+  top: 15px;
+  left: 270px;
+  border-radius: 50%;
+  background-color: rgb(249, 249, 250);
+  border: none;
+  cursor: pointer;
+  background-image: url("../img/Group\ 1-not.svg");
+  background-position: center top -26px;
+}
+
+.red {
+  z-index: 10;
+  background-image: url("../img/like.png");
+  background-position: center top -26px;
+}
+
+.notlike {
+  z-index: 5;
+  display: block;
+}
+
 @media (max-width: 800px) {
   .container {
     max-width: 90%;
