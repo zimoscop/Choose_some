@@ -70,30 +70,3 @@ function commonChoose(e) {
 }
 
 select.addEventListener("change", commonChoose);
-
-// function changeColor() {
-//   btn.style.backgroundColor = "red";
-// }
-
-// btn.addEventListener("click", () => {
-//   btn.classList.toggle("red");
-// });
-// btn.style.backgroundColor = "red";
-
-// document.querySelector(".notlike").style.backgroundColor = "red";
-
-// btn.addEventListener("click", (e) => console.log(e));
-document
-  .querySelector(".notlike")
-  .addEventListener("click", (e) => console.log(e));
-
-// const cardsCollection = document.getElementsByClassName("hp__card");
-// function liksMaker(arr) {
-//   for (el of arr) {
-//     btn.addEventListener("click", () => {
-//       btn.classList.toggle("red");
-//     });
-//   }
-// }
-
-// liksMaker(cardsCollection);
