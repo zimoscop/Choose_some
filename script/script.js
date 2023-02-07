@@ -42,7 +42,7 @@ function selectSearch(event) {
     );
 }
 
-select.addEventListener("change", selectSearch);
+select.addEventListener("input", selectSearch);
 
 const selectSch = document.querySelector(".select__school");
 

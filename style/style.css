@@ -14,6 +14,13 @@ header {
   border-bottom: 1px solid rgba(222, 226, 230, 1);
 }
 
+input:active,
+:hover,
+:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
 .header__textbox {
   max-width: 688px;
   margin: 0 auto;
@@ -94,6 +101,8 @@ section {
   width: 334px;
   background-color: rgba(255, 255, 255, 1);
   margin: auto;
+  border-radius: 4px;
+  overflow: hidden;
 }
 
 p {
@@ -135,7 +144,7 @@ img {
 
 .red {
   z-index: 10;
-  background-image: url("../img/like.png");
+  background-image: url("../img/Group 1 like.svg");
   background-position: center top -26px;
 }
 
